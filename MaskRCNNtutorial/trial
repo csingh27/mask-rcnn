@@ -1,0 +1,14 @@
+import matplotlib.pyplot as plt
+import matplotlib.image as mpimg
+import numpy as np
+import cv2
+image=mpimg.imread('/home/cs/GitHub/MaskRCNNtutorial/images/example_02.jpg')
+imagecv=cv2.imread('/home/cs/GitHub/MaskRCNNtutorial/images/example_02.jpg')
+#cv2.imshow("image",imagecv)
+#cv2.imshow("image",np.array(imagecv, dtype = np.uint8 ))
+#cv2.imshow("image",np.array(imagecv, dtype = int32 ))
+cv2.imshow("image",imagecv)
+print(imagecv.shape)
+cv2.waitKey(10000)
+#plt.imshow(image)
+#plt.show()
